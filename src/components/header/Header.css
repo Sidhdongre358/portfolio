@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    rgba(95, 95, 240, 0.1),
+    rgba(55, 99, 245, 0.2),
+    rgba(247, 183, 45, 0.4)
+  );
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 20px;
+  margin-right: 20px;
+}
+.header-content h1 {
+  font-size: 4rem;
+  font-family: "saira", sans-serif;
+}
+.header-content p {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  letter-spacing: 0.2px;
+  font-family: "saira", sans-serif;
+  color: #303070;
+ 
+}
+.fullname {
+  font-size: 3rem;
+  margin-top: 10px;
+  color: rgba(235, 151, 15, 1);
+  font-family: sans-serif;
+}
+.typingtext {
+  width: 100%;
+  height: 30px;
+
+}
+.header-payment-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  width: 90%;
+}
+.header-payment-container button {
+  background-color: rgba(235, 151, 15, 0.8);
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.header-payment-container button:hover {
+  color: #fff;
+}
+
+/* payments icon */
+.fa-paypal,
+.fa-cc-visa {
+  color: #003087;
+  font-size: 2rem;
+}
+
+.fa-cc-mastercard {
+  color: #d72432;
+  font-size: 2rem;
+}
+/* profile image container */
+.profile-img-container {
+  position: relative;
+  justify-content: flex-end;
+}
+.profile-img-container img {
+  width: 100%;
+  height: 100%;
+  border-left: 10px solid rgba(235, 151, 15, 0.8);
+  border-bottom: 10px solid rgb(72, 60, 243);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.circle-1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: 0;
+  margin: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-bottom: 10px solid rgba(235, 151, 15, 1);
+  border-radius: 15px;
+  z-index: 100;
+
+}
+.circle-2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 10px;
+  right: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  z-index: 100;
+}
+
+@media (min-width: 740px) {
+  .header-container {
+    flex-direction: row;
+  }
+}
